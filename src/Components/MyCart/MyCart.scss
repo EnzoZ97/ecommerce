@@ -1,0 +1,210 @@
+@use '../../styles/Variables.scss' as v;
+@import '../../styles/resposinve/Responsive.scss';
+
+.cart{
+    .MyCart{
+        width: 100%;
+        padding: 20px;
+    
+        .products{
+    
+            .myProduct{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                margin-bottom: 25px; 
+    
+                @include tablet{
+                    flex-direction: column;  
+                    margin-bottom: 50px;
+                }
+    
+                .main-image{
+                    width: 75px;
+                    height: 75px;
+                    border-radius: 20px;
+    
+                    @include tablet{
+                        width: 150px;
+                        height: 150px;
+                        margin-bottom: 10px;
+                    }
+    
+                    @include mobile{
+                        width: 100%;
+                    }
+                }
+    
+                .name{
+                    h4{
+                        font-family: v.$titles;
+                        color: v.$Select--color;
+    
+                        @include tablet{
+                            font-size: 1.4rem;
+                            margin-bottom: 5px;
+                        }
+                    }
+    
+                    p{
+                        width: 200px;
+                        word-break: break-all;
+                        font-family: v.$paragraph;
+                        font-size: .8rem;
+                        line-height: 18px;
+    
+                        @include tablet{
+                            width: 250px;
+                            text-align: center;
+                            font-size: 1.2rem;
+                        }
+    
+                        @include mobile{
+                            width: 100%;
+                        }
+                    }
+    
+                    @include tablet{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        margin-bottom: 5px;
+                    }
+                }
+    
+                .amount-and-price{
+                    .amount{
+                        font-family: v.$paragraph;
+                        font-size: 1rem;
+    
+                        @include tablet{
+                            font-size: 1.4rem;
+                        }
+    
+                        @include mobile{
+                            text-align: center;
+                        }
+                    }
+    
+                    .price{
+                        font-weight: bold;
+                        font-family: v.$paragraph;
+                        font-size: 1rem;
+    
+                        @include tablet{
+                            font-size: 1.4rem;
+                        }
+                    }
+    
+                    @include tablet{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        margin-bottom: 10px;
+                    }
+                }
+    
+                .total-by-amount{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .total{
+                        font-family: v.$paragraph;
+                        font-size: 1rem;
+    
+                        @include tablet{
+                            font-size: 1.4rem;
+                        }
+                    }
+    
+                    p{
+                        font-weight: bold;
+                        font-family: v.$paragraph;
+                        font-size: 1rem;
+    
+                        @include tablet{
+                            font-size: 1.4rem;
+                        }
+                    }
+    
+                    @include tablet{
+                        margin-bottom: 15px;
+                    }
+                }
+    
+                .remove{
+                    .btn-remove{
+                        padding: 5px 20px;
+                        font-family: v.$paragraph;
+                        font-size: 1rem;
+                        background-color: v.$secondary--color ;
+                        border: none;
+                        border-radius: 3px;
+                        cursor: pointer;
+    
+                        &:hover{
+                            filter: brightness(.9);
+                        }
+    
+                        @include tablet{
+                            padding: 5px 0px;
+                            width: 250px;
+                            font-size: 1.4rem;
+                        }
+    
+                        @include mobile{
+                            padding: 5px 0px;
+                            width: 100%;
+                        }
+                    }
+    
+                    @include mobile{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    
+        .total-by-all-products{
+            padding: 5px 20px;
+            text-align: right;
+    
+            p{
+                font-weight: bold;
+                font-size: 1.3rem;
+                font-family: v.$paragraph;
+    
+                @include tablet{
+                    font-size: 1.5rem;
+                }
+            }
+    
+            @include tablet{
+                text-align: center;
+            }
+        }
+    }
+    
+    
+    .cartEmpty{
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        .box-message{
+           text-align: center;
+    
+           .message{
+            font-family: v.$paragraph;
+           }
+    
+           .icon{
+            font-size: 2.5rem;
+            color: v.$Select--color;
+           }
+        }
+    }
+}

@@ -1,0 +1,85 @@
+@use '../../../styles/Variables.scss' as v;
+@import '../../../styles/resposinve/Responsive.scss';
+
+.cagetogy-and-sorting{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    //padding: 0px 20px;
+
+    .sorting{
+        display: flex;
+        align-items: center;
+        .sort-by{
+            font-family: v.$paragraph;
+            font-size: 1rem;
+            margin-right: 5px;
+            font-weight: bold;
+        }
+
+        .select{
+            display: flex;
+            flex-direction: column;
+            width: 8.1em;
+
+            .sort-selected{
+                width: 100%;
+                cursor: pointer;
+                display: flex;
+                justify-content: space-between;
+                padding-left: 8px;
+
+                .sort{
+                    text-align: start;
+                }
+
+                .icon{
+                    color: v.$Select--color;
+                    transition: all .2s ease-out;   
+                                   
+                }
+
+                .icon-active{
+                    transform: rotate(180deg);     
+                }
+            }
+
+            .sorting-list{
+                list-style: none;
+                background-color: white;
+                border-radius: 3px;
+                position: absolute;
+                top: 41px;
+                right: 20px;
+                display: none;
+
+
+                hr{
+                    border: 0;
+                    border-top: 1px solid #888;           
+                }
+
+                .option{
+                    margin: 5px 0px;
+                    padding: 2px 8px;
+                    font-size: .9rem;
+                }
+
+                .option:hover{
+                    cursor: pointer;
+                    color: v.$Select--color;
+                }
+
+                .option-active{
+                    font-weight: bold;
+                    color: v.$Select--color;
+                }
+            }
+
+            .sorting-list-active{
+                display: block;
+            }
+        }
+        
+    }
+}

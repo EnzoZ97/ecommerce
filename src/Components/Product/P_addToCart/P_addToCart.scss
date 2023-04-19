@@ -1,0 +1,183 @@
+@use '../../../styles/Variables.scss' as v;
+@import '../../../styles/resposinve/Responsive.scss';
+
+
+.addToCart{
+    width: 225px;
+    height: 500px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 3px #888;
+    padding: 10px;
+
+    @include laptop{ 
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;  
+        height: 175px;
+        margin-top: 20px;
+    }
+    
+
+    .productPrice{
+        font-family: v.$titles;
+        font-size: 2rem;
+        margin-bottom: 15px;
+
+        span{
+            color: v.$Select--color;
+
+        }
+    }
+
+    .amount{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        @include laptop{ 
+            display: flex;
+            flex-direction: column;
+            align-items: center;  
+        }
+
+        .units{
+            display: flex;
+            align-items: center;
+            p{
+                font-family: v.$paragraph;
+                font-size: 1.2rem;
+                margin-right: 5px;
+            }
+
+            .icon-arrow{
+                color: v.$Select--color;
+                font-size: 1.2rem;
+                transition: all .2s ease-in-out;
+                
+            }
+
+            .icon-arrow-active{
+                transform: rotate(180deg);
+            }
+
+        }
+
+        .dropdown{
+            position: absolute;
+            width: 200px;
+            border-radius: 5px;
+            padding: 5px 20px;
+            top: 100px;
+            background-color: white; 
+            box-shadow: 0 0 5px #888;
+
+            @include laptop{ 
+                top: 660px;
+            }
+
+            @include large_phone{
+                top: 735px;
+            }
+
+            @include mobile{
+                top: 825px;
+            }
+
+            .item{
+                list-style: none;
+                margin-bottom: 5px;
+                font-family: v.$paragraph;
+                font-size: 1.2rem;
+                cursor: pointer;
+
+                &:hover{
+                    color: v.$Select--color;
+                }
+                
+            }
+
+            .item-seleted{
+                color: v.$Select--color;
+            }
+
+            .more{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                padding: 10px;
+
+                p{
+                    font-family: v.$paragraph;
+                }
+
+                .more-input{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 5px 3px;
+                    border: 2px solid v.$Select--color;
+                    border-radius: 3px;
+
+                    input{
+                        width: 60%;
+                        padding: 4px;
+                        border: none;
+                        outline: none;
+                        border-radius: 3px;
+                        
+                    }
+
+                    .btn-add{
+                        padding:3px 10px;
+                        border-radius: 3px;
+                        background-color: v.$Select--color;
+                        border: none;
+                        color: black;
+                        font-family: v.$paragraph;
+                        font-size: .9rem;
+                        cursor: pointer;
+                        transition: all .2 ease-in-out;
+
+                        &:hover{
+                            filter: brightness(.8);
+                        }
+                    }
+
+                }
+            }
+
+            .more-disabled{
+                display: none;
+            }
+        }
+
+        .dropdown-disabled{
+            display: none;
+        }
+    }
+
+    .addProduct{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        .btn-addProduct{
+            text-decoration: none;
+            color: black;
+            padding: 8px 50px;
+            border: none;
+            border-radius: 25px;
+            font-size: 1.1rem;
+            font-family: v.$paragraph;
+            background-color: v.$Select--color;
+            margin-top: 20px;
+            cursor: pointer;
+
+            &:hover{
+                filter: brightness(.8);
+            }
+        }
+    }
+}

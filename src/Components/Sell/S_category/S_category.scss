@@ -1,0 +1,80 @@
+@use '../../../styles/Variables.scss' as v;
+@use '../Sell.scss' as s;
+@import '../../../styles/resposinve/Responsive.scss';
+
+
+.category{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .message{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+        p{
+            display: flex;
+            align-items: center;
+            font-family: v.$titles;
+            font-size: s.$font-size-items;
+        }
+    }
+    .category-box{
+        display: flex;
+        width: 550px;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        flex-wrap: wrap;
+
+        @include large_phone{
+            width: 300px;
+        }
+
+        @include mobile{
+            width: 100px;
+        }
+        
+        .btn-category{
+            width: 115px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 5px 0px;
+            border-radius: 3px;
+            border: 1px solid #535353;
+            box-shadow: 2px 3px 10px #888;
+            transition: all .2s ease-out;
+            cursor: pointer;
+
+            @include large_phone{
+                margin-bottom: 25px;
+            }
+    
+            p{
+                font-family: v.$titles;
+                font-size: 1.1rem;
+                margin-bottom: 5px;
+            }
+    
+            .icon{
+                font-size: 1.5rem;                   
+            }
+        }
+    
+        .btn-category:hover{
+            box-shadow: 3px 3px 20px #a0a0a0;
+            transform: scale(1.1);
+        }
+    
+        .active{
+            box-shadow: none;
+            transition: all .2s ease-out;
+            box-shadow: 0px 2px 50px #00a455;           
+        }
+    
+        .active:hover{
+            transform: scale(1);
+            box-shadow: 0px 2px 50px #00a455;   
+        }
+    }
+}

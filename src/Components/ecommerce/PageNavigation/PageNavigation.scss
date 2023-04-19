@@ -1,0 +1,28 @@
+@use '../../../styles/Variables.scss' as v;
+
+.pageNavitacion{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    .page{
+        margin: 0px 10px 10px 10px;
+        border: 1px solid #888;
+        color: v.$numberPage--color;
+        font-family: v.$paragraph;
+        font-size: .9rem;
+        padding:5px 8px;
+        font-weight: 700;
+        cursor: pointer;
+    }
+
+    .active{
+        margin: 0px 10px 10px 10px;
+        border: 1px solid black;
+        color: black;
+        font-family: v.$paragraph;
+        font-size: .9rem;
+        padding:5px 8px;
+        font-weight: 700;
+    }
+}

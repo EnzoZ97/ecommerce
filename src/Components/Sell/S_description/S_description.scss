@@ -1,0 +1,152 @@
+@use '../../../styles/Variables.scss' as v;
+@import '../../../styles/resposinve/Responsive.scss';
+
+.description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .description-message{
+        width: 100%;
+        text-align: center;
+        font-family: v.$titles;
+        font-size: 1.1rem;
+    }
+
+    .description-box{
+        display: flex;
+        width: 310px;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+
+        @include large_phone{
+            flex-direction: column;
+        }
+
+        label{
+            font-size: 1.1rem;
+
+            @include large_phone{
+                margin-bottom: 15px;
+            }
+        }
+
+        .description{
+            border-radius: 3px;
+            border:none;
+            outline-color: skyblue;
+            padding: 3px 5px;
+            font-family: v.$paragraph;
+            font-size: 1rem;
+            border: 1px solid black;
+        }
+    }
+
+    .btn-description{
+        margin-top: 20px;
+        padding: 5px 10px;
+        text-transform: capitalize;
+        border-radius: 3px;
+        border: 1px solid black;
+        font-family: v.$paragraph;
+        font-size: 1rem;
+        cursor: pointer;
+
+        &:hover{
+            color: v.$Select--color;
+            border-color: v.$Select--color;
+        }
+    
+        &:active{
+            border-color: black;
+        }
+    }
+
+    
+
+    .list-description{
+        width: 825px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        @include laptop{
+            width: 500px;
+        }
+
+        @include large_phone{
+            width: 300px;
+        }
+
+
+        @include mobile{
+            width: 250px;
+        }
+
+        .box-item{
+            width: 100%;
+            list-style: none;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: center;
+      
+
+            .item{
+                width: 100%;
+                word-wrap: break-word;
+                padding-left: 1em; 
+                font-family: v.$paragraph;               
+
+                @include laptop{
+                    font-size: 1.3rem;
+                }
+        
+                @include large_phone{
+                    font-size: 1.4rem;
+                }
+            }
+
+            .item::before{
+                content: "\2022";
+                color: v.$Select--color;
+                font-weight: bold;
+                margin-right: 1em; 
+            }
+
+            textarea{
+                width: 90%;
+                border-radius: 2px;  
+            }
+
+            .icons{
+                display: flex;
+                flex-direction: column;
+                margin-left: 10px;
+                font-size: 1.3rem;
+                justify-content: space-around;
+
+                @include laptop{
+                    font-size: 2rem;
+                }
+
+                .close,
+                .edit,
+                 .check{
+                    margin-bottom: 5px;
+                    cursor: pointer;
+                }
+
+
+                .close:hover,
+                .edit:hover,
+                .check:hover{
+                    color: v.$Select--color;
+                }
+
+            }
+        }
+    }
+}

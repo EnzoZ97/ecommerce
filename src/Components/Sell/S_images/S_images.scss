@@ -1,0 +1,109 @@
+@use '../../../styles/Variables.scss' as v;
+@import '../../../styles/resposinve/Responsive.scss';
+
+.images_list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .S_images-message{
+        width: 100%;
+        text-align: center;
+        font-family: v.$titles;
+        font-size: 1.1rem;
+    }
+
+    .box-getUrl{
+        display: flex;
+        width: 310px;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+    
+        @include large_phone{
+            flex-direction: column;
+        }
+    
+        label{
+            font-size: 1.1rem;
+    
+            @include large_phone{
+                margin-bottom: 15px;
+            }
+        }
+    
+        .I_image{
+            border-radius: 3px;
+            border:none;
+            outline-color: skyblue;
+            padding: 3px 5px;
+            font-family: v.$paragraph;
+            font-size: 1rem;
+            border: 1px solid black;
+        }
+    }
+
+    .btn-image{
+        margin-top: 20px;
+        padding: 5px 10px;
+        text-transform: capitalize;
+        border-radius: 3px;
+        border: 1px solid black;
+        font-family: v.$paragraph;
+        font-size: 1rem;
+        cursor: pointer;
+        
+        &:hover{
+            color: v.$Select--color;
+            border-color: v.$Select--color;
+        }
+
+        &:active{
+            border-color: black;
+        }
+    }
+
+    .box-showImages{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 20px;
+
+        .item{
+            width: 200px;
+            height: 150px;
+            display: flex;
+            flex-direction: column;
+            margin: 10px;
+
+            .item-image{
+                width: 100%;
+                height: 100%;
+                border-top-left-radius: 3px;
+                border-top-right-radius: 3px;
+            }
+
+            .btn-removeImage{
+                padding: 3px 10px;
+                border: 1px solid black;
+                color: v.$Select--color;
+                border-bottom-left-radius: 3px;
+                border-bottom-right-radius: 3px;
+                font-size: .9rem;
+                cursor: pointer;
+
+                &:hover{
+                    border-color: v.$Select--color;
+                }
+
+                
+
+ 
+            }
+
+            
+        }
+    }
+}

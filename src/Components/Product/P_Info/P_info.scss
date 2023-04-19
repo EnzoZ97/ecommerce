@@ -1,0 +1,64 @@
+@use '../../../styles/Variables.scss' as v;
+@import '../../../styles/resposinve/Responsive.scss';
+
+.info{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+
+    @include laptop{
+        width: 100%;
+    }
+
+    .productName{
+        width: 100%;
+        text-align: start;
+        font-family: v.$titles;
+
+        @include laptop{   
+            text-align: center;
+        }
+    }
+
+    hr{
+        margin: 10px 0px;
+        border: 1px solid v.$Select--color;
+    }
+
+    .description{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+
+        @include laptop{
+            align-items: center;
+        }
+        
+        .title-item{
+            font-family: v.$titles;
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        ul{
+            list-style: none;
+
+            li{
+                font-size: 1rem;
+                font-family: v.$paragraph;
+                font-weight: 500;
+            }
+
+            li::before{
+                content: "\2022";
+                color: v.$Select--color;
+                font-weight: bold;
+                font-size: 1.3rem;
+                margin-right: .5em; 
+            }
+        }
+
+    }
+}

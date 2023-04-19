@@ -1,0 +1,28 @@
+@use '../../styles/Variables.scss' as v;
+@import '../../styles/resposinve/Responsive.scss';
+
+.Product{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+
+    @media screen and (min-width:1367px){
+        justify-content: center;
+    }
+
+    @include desktop{
+        justify-content: space-around;
+    }
+
+    @include laptop{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    @include large_phone{
+        padding: 5px;
+    }
+
+}

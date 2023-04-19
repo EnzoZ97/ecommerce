@@ -1,0 +1,89 @@
+@use '../../styles/Variables.scss' as v;
+@import '../../styles/resposinve/Responsive.scss';
+
+.Help{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 140px;
+
+    .content{
+        margin: 50px 0px;
+        width: 800px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        box-shadow: 0px 1px 4px #888;
+
+        .title{
+            font-family: v.$titles;
+            margin-bottom: 15px;
+        }
+
+        .some-questions{
+            list-style: none;
+            padding: 10px;
+
+            .item{
+                margin-bottom: 20px;
+
+                .question-box{
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    @include large_phone{
+                     flex-direction: column;
+                     text-align: center;
+                    }
+
+                    cursor: pointer;
+
+                    .question{
+                        font-size: 1.1rem;
+                        font-weight: bold;
+                        font-family: v.$paragraph;
+
+                        @include mobile{
+                            font-size: 0.9rem;
+                        }
+                    }
+
+                    .icon{
+                        font-size: 1.5rem;
+                        color: v.$Select--color;
+                        transition: all .2s ease-in-out;
+                    }
+
+                    .icon-active{
+                        transform: rotate(180deg);
+                    }
+                }
+                
+
+                .answer-box{
+                    height: 0px;
+                    overflow:hidden;
+                    transition: all .2s ease-in-out;
+
+                    .answer{
+                        font-size: 1rem;
+                        font-family: v.$paragraph;
+                        overflow: hidden;
+                        text-align: start;
+
+                        @include large_phone{
+                            text-align: center;
+                        }
+                    }
+                }
+
+                .answer-box-active{
+                    height: 65px;
+                }
+            }
+        }
+    }
+}
