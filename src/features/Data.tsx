@@ -492,7 +492,178 @@ const initialState: DataState = {
 		`We provide a 30-day full refund with no question asked & 24-hour instant customer service. If there are any problems with the nightstands, please contact us to get free parts or a NEW item for replacement.`
 	],
 	category: "Furniture"
-}]
+},
+{
+	name:"Grand Theft Auto V - PlayStation 5",
+	img: [
+		"https://m.media-amazon.com/images/I/71rmY66nqoL._SL1361_.jpg",
+		"https://m.media-amazon.com/images/I/81CaxtOZofL._SL1500_.jpg",
+		"https://m.media-amazon.com/images/I/81hUPLAplQL._SL1500_.jpg",
+		"https://m.media-amazon.com/images/I/71slSSoakTL._SL1500_.jpg",
+		"https://m.media-amazon.com/images/I/81u-0qRF6XL._SL1500_.jpg",
+		"https://m.media-amazon.com/images/I/91IH+i2RyEL._SL1500_.jpg",
+		"https://m.media-amazon.com/images/I/71VkXKI8yeL._SL1500_.jpg"
+	] ,
+	price: 23.00,
+	description: [
+		"STUNNING VISUALS — Enhanced levels of fidelity and performance with new graphics modes featuring up to 4K resolution, up to 60 frames per second, HDR options, ray tracing, improved texture quality, and",
+		"FASTER LOADING — Quicker access to the action as the world of Los Santos and Blaine County load in faster than ever before",
+		"ADAPTIVE TRIGGERS AND HAPTIC FEEDBACK — Feel every moment through the DualSense controller, from directional damage to weather effects, rough road surfaces to explosions, and more",
+		"TEMPEST 3D AUDIO — Hear the sounds of the world with pinpoint precision: the throttle of a stolen supercar, the rattle of neighboring gunfire, the roar of a helicopter overhead, and more"
+	],
+	category: "Games"
+},
+{
+	name:"God of War Ragnarök - PlayStation 5",
+	img: [
+		"https://m.media-amazon.com/images/I/81Pagnfx1DL._SL1500_.jpg",
+		"https://m.media-amazon.com/images/I/81tSQchr61L._SL1500_.jpg",
+		"https://m.media-amazon.com/images/I/81Z6g4ppWHL._SL1500_.jpg",
+		"https://m.media-amazon.com/images/I/81zadb8VWpL._SL1500_.jpg",
+		"https://m.media-amazon.com/images/I/81d3MmvD2BL._SL1500_.jpg",
+		"https://m.media-amazon.com/images/I/813hw4o8SAL._SL1500_.jpg",
+		"https://m.media-amazon.com/images/I/81H+6RI6U7L._SL1500_.jpg",
+		"https://m.media-amazon.com/images/I/91PDnTXtenL._SL1500_.jpg",
+		"https://m.media-amazon.com/images/I/91j4QxPUvaL._SL1500_.jpg"
+	] ,
+	price: 68.00,
+	description: [
+		"Feel your journey through the Norse realms, made possible by immersive haptic feedback and adaptive trigger functionality.",
+		"Take advantage of multidirectional 3D Audio; hear enemies approaching from any direction. (3D audio with stereo headphones (analog or USB))",
+		"Bask in the beautiful worlds you travel through, brought to life by precise art direction and arresting attention to detail.",
+		"Switch between full 4K resolution at a targeted 30 frames per second, or dynamic resolution upscaled to 4K at a targeted 60fps. (4K resolution requires a compatible 4K TV or display)"
+	],
+	category: "Games"
+},
+{
+	name:"The Last of Us Part I – PlayStation 5",
+	img: [
+		"https://m.media-amazon.com/images/I/81l41iKPF3L._SL1500_.jpg",
+		"https://m.media-amazon.com/images/I/71klFuJqZDL._SL1500_.jpg",
+		"https://m.media-amazon.com/images/I/81qjCuT6ZwL._SL1500_.jpg",
+		"https://m.media-amazon.com/images/I/71j9Es6ZFSL._SL1500_.jpg",
+		"https://m.media-amazon.com/images/I/81d18KUk43L._SL1500_.jpg",
+		"https://m.media-amazon.com/images/I/71XNeZxjUtL._SL1500_.jpg",
+		"https://m.media-amazon.com/images/I/71eZnq6LQ0L._SL1500_.jpg",
+		"https://m.media-amazon.com/images/I/71ZRrlXy7fL._SL1500_.jpg",
+		"https://m.media-amazon.com/images/I/71wVqPrGXnL._SL1500_.jpg",
+		"https://m.media-amazon.com/images/I/71MEv-MISyL._SL1500_.jpg",
+		"https://m.media-amazon.com/images/I/71Ynz6X6w0L._SL1500_.jpg",
+		"https://m.media-amazon.com/images/I/7123YsBEhpL._SL1500_.jpg"
+	] ,
+	price: 69.00,
+	description: [
+		"Enhanced visuals: Completely rebuilt from the ground up using Naughty Dog’s latest PS5 engine technology to improve every visual detail, The Last of Us experience has been faithfully enhanced with more realistic lighting and atmosphere, more intricate environments and creative reimaginings of familiar spaces.",
+		"Fast loading: Initial loading times are near instant, and seamless after the first instance thanks to the PS5 console’s SSD – so you can pick up where you left off in the story and load specific encounters and chapters more quickly.",
+		"Haptic feedback: DualSense wireless controller haptic feedback support for every weapon elevates combat encounters, and environments are brought to life through DualSense wireless controller haptic sensations of subtle falling rain, the crunch of stepping on snow and more.",
+		"Adaptive triggers: All The Last of Us iconic weapons, including Joel’s revolver and Ellie’s bow, now deliver dynamic DualSense wireless controller trigger resistance and kickback on firing for deeper combat immersion.",
+		"3D Audio: Designed to make use of the PS5 console’s Tempest 3D AudioTech, Naughty Dog’s newly upgraded audio engine delivers richer soundscapes, bigger explosive moments and more visceral gameplay through compatible stereo headphones (analogue or USB) or TV speakers."
+	],
+	category: "Games"
+},
+{
+	name:"Marvel's Spider-Man: Miles Morales - PlayStation 5",
+	img: [
+		"https://m.media-amazon.com/images/I/71ez57A5HtL._SL1361_.jpg",
+		"https://m.media-amazon.com/images/I/810p7CmPODL._SL1500_.jpg",
+		"https://m.media-amazon.com/images/I/81L0X99ZEOL._SL1500_.jpg",
+		"https://m.media-amazon.com/images/I/81Ke1uk4VwL._SL1500_.jpg",
+		"https://m.media-amazon.com/images/I/81SZHiAq53L._SL1500_.jpg",
+		"https://m.media-amazon.com/images/I/81xcM5svCAL._SL1500_.jpg"
+	] ,
+	price: 38.99,
+	description: [
+		"Miles morales discovers explosive powers that set him apart from his mentor, peter parker. Master his unique, bio-electric venom Blast attacks and covert camouflage power alongside spectacular web-slinging acrobatics, gadgets and skills.",
+		"A war for control of Marvel's new York has broken out between a devious Energy Corporation and a high-tech criminal army. With his new home at the heart of the battle, miles must learn the cost of becoming a hero.",
+		"Traverse the snowy streets of his new, vibrant and bustling Neighborhood as miles searches for a sense of belonging. When the lines blur between his personal and crime-fighting lives, he discovers who he can trust, and what it feels like to truly be home."
+	],
+	category: "Games"
+},
+{
+	name:"Mortal Kombat 11 Ultimate - PlayStation 5",
+	img: [
+		"https://m.media-amazon.com/images/I/71H-61NX1pL._SL1361_.jpg",
+		"https://m.media-amazon.com/images/I/91LtG7Ja6zL._SL1500_.jpg",
+		"https://m.media-amazon.com/images/I/71rj3A53ToL._SL1500_.jpg",
+		"https://m.media-amazon.com/images/I/71rObqx8kAL._SL1500_.jpg",
+		"https://m.media-amazon.com/images/I/818sCiFAYaL._SL1500_.jpg",
+		"https://m.media-amazon.com/images/I/910jhFKpLgL._SL1500_.jpg"
+	] ,
+	price: 27.84,
+	description: [
+		"Experience 2 robust and critically acclaimed story campaigns from Mk11 & Mk11: aftermath",
+		"Play as the complete 37-character roster, including newly added fighters Mileena, RaiN & Rambo",
+		"Thousands of Skins & weapons & Gear for an unprecedented level of Fighter customization",
+		"Includes all previous guest fighters such as Terminator Joker spawns & Robocop",
+		"Every mode included"
+	],
+	category: "Games"
+},
+{
+	name:"Dead Island 2: Day 1 Edition - Xbox Series X",
+	img: [
+		"https://m.media-amazon.com/images/I/81hQumhfFeL._SL1500_.jpg",
+		"https://m.media-amazon.com/images/I/91m0oN4sqQL._SL1500_.jpg",
+		"https://m.media-amazon.com/images/I/81b0+feqv5L._SL1500_.jpg",
+		"https://m.media-amazon.com/images/I/81-8yT9rheL._SL1500_.jpg",
+		"https://m.media-amazon.com/images/I/71-Hbb4Iu0L._SL1500_.jpg",
+		"https://m.media-amazon.com/images/I/81bt4OV8HyL._SL1500_.jpg"
+	] ,
+	price: 69.99,
+	description: [
+		"Dead Island 2 takes players across the most iconic locations of the City of Angels, now stained with horror, in an exciting pulp journey from the verdant suburbia of Beverly Hills to the quirky promenade of Venice Beach",
+		"Combat delivers the most intense, visceral and gory first person experience possible, with plenty of weapons and tactical (and brutal) options to chew your way through the zombie horde",
+		"There are 6 characters to choose from, each with their own unique personality and dialogues - You can fully customize the abilities of each Slayer, with our brand-new skill system allowing you to re-spec instantly and try out the craziest builds.",
+		"Our LA is crawling with zombies that look & react realistically - These mutated wretches are the reanimated, rotten heart of Dead Island 2 with dozens of distinct zombie types, each with their own mutations, attacks & hundreds of LA-themed variants",
+		"Day 1 Edition includes the Memories of Banoi Pack - Banoi War Club, Memories of Banoi Baseball Bat, Weapon Perk – balanced, Personal space skill card",
+		"Alexa Game Control: Use your voice to swap weapons, set waypoints, goad zombies, and much more, available first on Dead Island 2. Play with any microphone or headset, no Alexa device required."
+	],
+	category: "Games"
+},
+{
+	name:"Elden Ring - Xbox Series X",
+	img: [
+		"https://m.media-amazon.com/images/I/81AXuMBqy9L._SL1500_.jpg",
+		"https://m.media-amazon.com/images/I/71ugu+Io97L._SL1500_.jpg",
+		"https://m.media-amazon.com/images/I/61tSIL4L7KL._SL1500_.jpg",
+		"https://m.media-amazon.com/images/I/71UkqgzWtcL._SL1500_.jpg",
+		"https://m.media-amazon.com/images/I/71EuANxoSsL._SL1500_.jpg",
+		"https://m.media-amazon.com/images/I/71GSR-A0BfL._SL1500_.jpg",
+		"https://m.media-amazon.com/images/I/71AcpAptdxL._SL1500_.jpg",
+		"https://m.media-amazon.com/images/I/71tL5mpSFKL._SL1500_.jpg"
+	] ,
+	price: 45.49,
+	description: [
+		"ELDEN RING is a fantasy action-RPG adventure set within a world created by Hidetaka Miyazaki—creator of the influential DARK SOULS video game series; and George R.R. Martin—author of The New York Times best-selling fantasy series, A Song of Ice and Fire",
+		"Danger and discovery lurk around every corner in FromSoftware’s largest game to-date",
+		"HIDETAKA MIYAZAKI: President and Game Director of FromSoftware Inc. Known for directing critically-acclaimed games in beloved franchises including Armored Core and Dark Souls",
+		"GEORGE R. R. MARTIN: the #1 The New York Times bestselling author of many novels, including the acclaimed series A Song of Ice and Fire—A Game of Thrones, A Clash of Kings, A Storm of Swords, A Feast For Crows, and A Dance with Dragons"
+	],
+	category: "Games"
+},
+{
+	name:"The Callisto Protocol Day One Edition - Xbox Series X",
+	img: [
+		"https://m.media-amazon.com/images/I/71BfHb2WCTL._SL1500_.jpg",
+		"https://m.media-amazon.com/images/I/51tAwtJOaJL.jpg",
+		"https://m.media-amazon.com/images/I/61+776UWF0L._SL1500_.jpg",
+		"https://m.media-amazon.com/images/I/61zIwzL7JML._SL1500_.jpg",
+		"https://m.media-amazon.com/images/I/613kF6d4zwL._SL1500_.jpg",
+		"https://m.media-amazon.com/images/I/61QpIT+XgWL._SL1500_.jpg",
+		"https://m.media-amazon.com/images/I/61Sx03SefIL._SL1500_.jpg",
+		"https://m.media-amazon.com/images/I/71IHaEzKdtL._SL1500_.jpg"
+	] ,
+	price: 49.94,
+	description: [
+		"Horror Engineering - The Callisto Protocol is a next generation take on survival horror from the mind of Glen Schofield",
+		"Uncover the Secrets of the united Jupiter Company - Set on Jupiter’s dead moon Callisto in the year 2320",
+		"Players will be forced to get up close and personal with their grotesque opponents, hacking off limbs, blasting off legs, and getting creative with whatever is at their disposal to survive",
+		"Experience the Isolation of Jupiter’s Dead Moon - One of the most hostile, isolated environments in the universe",
+		"Players must not only contend with the horrors of Black Iron Prison, but also the centuries-old secrets that plague Jupiter’s long-dead moon"
+	],
+	category: "Games"
+},
+]
 }
 
 
